@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve",
-    "build": "ng build --prod --aot --base-href=/dist/nearby-venues/",
+    "build": "ng build --prod --aot --base-href=/nearby-venues/dist/",
     "test": "ng test",
     "lint": "ng lint"
   },
