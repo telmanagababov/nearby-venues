@@ -1,0 +1,16 @@
+<div>
+  <h4>Radius of interest</h4>
+
+  <div>
+    <p>{{interestRadius$ | async}} meters</p>
+    <input
+      id="interest-range"
+      type="range"
+      min="100"
+      max="100000"
+      step="100"
+      [value]="interestRadius$ | async"
+      (change)="changeInterestRadius($event.target.value)"
+    >
+  </div>
+</div>

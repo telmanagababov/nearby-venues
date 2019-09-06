@@ -1,0 +1,22 @@
+:host {
+  padding: 15px;
+}
+
+#interest-range {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+
+  &:before {
+    content: '100';
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+  }
+  &:after {
+    content: '100000';
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+  }
+}

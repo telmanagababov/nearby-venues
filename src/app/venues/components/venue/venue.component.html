@@ -1,0 +1,10 @@
+<div class="venue" *ngIf="venue">
+  <h5 class="venue-name">{{venue.name}}</h5>
+
+  <section class="venue-info">
+    <p class="venue-info-category">{{venue.category}}</p>
+    <img class="venue-info-category-icon" [src]="venue.categoryIcon"/>
+    <p>Address: {{venue.address}}</p>
+    <p>Distance: {{venue.distance}} meters</p>
+  </section>
+</div>

@@ -1,0 +1,10 @@
+<h3>Nearby Venues</h3>
+
+<div *ngIf="(isFetching$ | async) === false; else loadingVenuesTemplate" id="venues-list">
+  <nbv-venue
+    *ngFor="let venue of (venues$ | async)"
+    [venue]="venue"
+  ></nbv-venue>
+</div>
+
+<ng-template #loadingVenuesTemplate>Loading venues ...</ng-template>
